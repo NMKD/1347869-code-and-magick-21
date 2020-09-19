@@ -1,7 +1,7 @@
 # Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
 
 * Студент: [Kristina Kryazheva](https://up.htmlacademy.ru/javascript/21/user/1347869).
-* Наставник: `Неизвестно`.
+* Наставник: `Артем Доба`.
 
 ---
 
