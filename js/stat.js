@@ -35,7 +35,7 @@ window.renderStatistics = (ctx, names, times) => {
   ctx.fillText('Список результатов:', HEADER_X, HEADER_Y + GAP * 2);
 
   ctx.fillStyle = '#000';
-  
+
   const getMaxElement = (arr) => {
     let maxElement = arr[0];
     for (let i = 1; i < arr.length; i++) {
