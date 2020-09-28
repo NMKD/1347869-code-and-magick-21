@@ -10,7 +10,6 @@ const HEADER_Y = 30;
 const FONT_GAP = 255;
 const BAR_WIDTH = 40;
 const BAR_HEIGHT = 150;
-const TIMES_Y = 80;
 const BAR_Y = 250;
 const RED_COLOR = `rgba(255, 0, 0, 1)`;
 
@@ -55,6 +54,6 @@ window.renderStatistics = (ctx, names, times) => {
     ctx.fillRect(CLOUD_X + BAR_WIDTH + (BAR_WIDTH + BAR_WIDTH) * i, BAR_Y - GAP - (BAR_HEIGHT * times[i]) / maxTime, BAR_WIDTH, (BAR_HEIGHT * times[i]) / maxTime);
     ctx.fillStyle = `#000`;
     ctx.fillText(names[i], CLOUD_X + BAR_WIDTH + (BAR_WIDTH + BAR_WIDTH) * i, FONT_GAP);
-    ctx.fillText(timesRound, CLOUD_X + BAR_WIDTH + (BAR_WIDTH + BAR_WIDTH) * i, TIMES_Y - (GAP * 2) - (BAR_HEIGHT * times[i]) / maxTime);
+    ctx.fillText(timesRound, CLOUD_X + BAR_WIDTH + (BAR_WIDTH + BAR_WIDTH) * i, BAR_Y - (GAP * 3) - (BAR_HEIGHT * times[i]) / maxTime);
   }
 };
